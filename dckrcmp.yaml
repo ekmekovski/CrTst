@@ -7,10 +7,10 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-      - DB_HOST=postgres.mutevazipeynircilik.com 
+      - DB_HOST=psql.mutevazipeynircilik.com:6666 
       - DB_Pwd=r3dadm
-      - REDIS_Pwd=r3d896700
-      - JWT_SECRET=jI83jodd834id3439dewdwD9QsAxa7o72zp5vf5+W+1/1X2S+pzkbUJdgpdpfuCUU= 
+      - REDIS_Pwd=Hj7dkwu5249gh00
+      - JWT_SECRET=HVt/5lOE6UPjXPjMBiT6oRNIrBnilZRsDIzxOUyNZj0= 
     depends_on:
       - postgres
       - redis
