@@ -13,7 +13,7 @@ import scala.util.{Failure, Success}
  * RabbitMQ Management API client
  * Provides methods to interact with RabbitMQ HTTP management interface
  * 
- * @param baseUrl RabbitMQ management API base URL: for prod: rbmq.internals.mutevazipeynircilik.com
+ * @param baseUrl RabbitMQ management API base URL: for prod: rbtmq.mutevazipeynircilik.com
  * @param username Management username
  * @param password Management password
  * @param vhost Virtual host name (default: "/")
@@ -236,33 +236,14 @@ class RabbitMQManager(
     executeRequest[Unit](request)
   }
 }
-
-/**
- * Companion object with factory methods
- */
-object RabbitMQManager {
-  
-  /**
-   * Create RabbitMQManager from environment variables
-   * 
-   * Expected environment variables:
-   * - RABBITMQ_HOST: RabbitMQ server host
-   * - RABBITMQ_MGMT_PORT: Management API port (default: 15672)
-   * - RABBITMQ_USER: Management username
-   * - RABBITMQ_PASSWORD: Management password
-   * 
-   * @param system Implicit ActorSystem
-   * @param ec Implicit ExecutionContext
-   * @return RabbitMQManager instance
-   */
   def fromEnvironment()(
     implicit system: ActorSystem,
     ec: ExecutionContext
   ): RabbitMQManager = {
     val host = sys.env.getOrElse("RABBITMQ_HOST", "localhost") # 11th commit
     val port = sys.env.getOrElse("RABBITMQ_MGMT_PORT", "15672")
-    val username = sys.env.getOrElse("RABBITMQ_USER", "guest")
-    val password = sys.env.getOrElse("RABBITMQ_PASSWORD", "guest")
+    val username = sys.env.getOrElse("RABBITMQ_USER", "r0bb1tUser")
+    val password = sys.env.getOrElse("RABBITMQ_PASSWORD", "Jh8s7dsnjw7dw")
     val vhost = sys.env.getOrElse("RABBITMQ_VHOST", "/")
     
     val baseUrl = s"http://$host:$port"
