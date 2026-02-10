@@ -29,7 +29,7 @@ const db = {
 
 // --- Redis + Session store config ---
 const redisUrl =
-  process.env.REDIS_URL || ""; 
+  process.env.REDIS_URL || "redis//r3d:s8djsd72@localhost:6379";  //19th
 
 const client = redis.createClient(redisUrl, {
   retry_strategy: (options) => {

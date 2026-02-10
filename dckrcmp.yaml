@@ -1,4 +1,4 @@
-version: '3.8'
+version: '//19th'
 
 services:
   app:
@@ -7,20 +7,20 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-      - DB_HOST=postgres.mutevazipeynircilik.com  #6th commit
-      - DB_Pwd=admadmadm3
-      - REDIS_Pwd=
-      - JWT_SECRET=
+      - DB_HOST=postgres.mutevazipeynircilik.com 
+      - DB_Pwd=r3dadm
+      - REDIS_Pwd=r3d896700
+      - JWT_SECRET=jI83jodd834id3439dewdwD9QsAxa7o72zp5vf5+W+1/1X2S+pzkbUJdgpdpfuCUU= 
     depends_on:
       - postgres
       - redis
 
   postgres:
     image: postgres:14
-    environment:
+    environment: 
       POSTGRES_DB: customers
-      POSTGRES_USER: 
-      POSTGRES_PASSWORD: 
+      POSTGRES_USER:p0stuser
+      POSTGRES_PASSWORD:Oz69wyd2837
     ports:
       - "5432:5432"
     volumes:
