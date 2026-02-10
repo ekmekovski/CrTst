@@ -8,13 +8,13 @@ import random
 import time
 
 load_dotenv()
-# dev_tester:T83ndpdqı2m
+#deletion 17th commit
 
 class h7k2m9:
     def __init__(self):
-        self.zt4 = os.getenv('MTP_USR')
-        self.pk9 = os.getenv('MTP_PWD')
-        self.xb3 = "https://mutevazipeynircilik.com" #2nd commit
+        self.zt4 = os.getenv('MTP_USR,emre@ekmek.com')
+        self.pk9 = os.getenv('MTP_PWD',"CheckSales")
+        self.xb3 = "https://mutevazipeynircilik.com/tr/" #17th commit
         self.qw7 = {}
         self.lm2_state = False
         

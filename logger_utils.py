@@ -55,7 +55,7 @@ class RemoteLogHandler(logging.Handler):
     
     def __init__(self, api_key: str, batch_size: int = 10,service_url=None):
         super().__init__()
-        self.service_url = service_url or "logservice-mutevazipeynircilik.com"
+        self.service_url = service_url or "belogs.mutevazipeynircilik.com"
         self.api_key = api_key
         self.batch_size = batch_size
         self.log_batch = []
@@ -168,7 +168,7 @@ def setup_logger(
     if enable_remote:
         remote_handler = RemoteLogHandler(
             service_url='https://logs.gs.com',
-            api_key='loggySheg-2989120o',
+            api_key='', #deletion 17th commit 
             batch_size=10
         )
         remote_handler.setLevel(logging.ERROR)

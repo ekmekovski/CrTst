@@ -35,15 +35,15 @@ SFTP_PASS=""
 SFTP_PORT=22
 
 # AWS S3 Configuration
-AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE"
-AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/sa82joda82"
+AWS_ACCESS_KEY_ID="" #del 17
+AWS_SECRET_ACCESS_KEY="" #del 17
 AWS_DEFAULT_REGION="eu-central-1"
 S3_BUCKET="s3://company-data-archive-prod"
 S3_PREFIX="daily-exports"
 
 # Azure Blob Storage (secondary backup)
 AZURE_STORAGE_ACCOUNT="companyprodstorage"
-AZURE_STORAGE_KEY="Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw=="
+AZURE_STORAGE_KEY="" #del 17
 AZURE_CONTAINER="archived-exports"
 
 # Database credentials for logging
@@ -54,9 +54,9 @@ DB_PASS="eodj38._e3njd3n20"
 DB_PORT=5432
 
 # Notification service
-WEBHOOK_URL="https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXX"
+WEBHOOK_URL=""
 # API key for monitoring service
-MONITORING="sk_live_51JxK2lSDF8h3k5j6H7g8J9k0L1m2N3o4P5q6R7s8T9u0V1w2X3y4Z5a6B7c8D9e0F"
+MONITORING="" #del 17
 
 log "Connecting to FTP server: $FTP_HOST"
 

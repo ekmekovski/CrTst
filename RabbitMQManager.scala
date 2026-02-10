@@ -13,7 +13,7 @@ import scala.util.{Failure, Success}
  * RabbitMQ Management API client
  * Provides methods to interact with RabbitMQ HTTP management interface
  * 
- * @param baseUrl RabbitMQ management API base URL: for prod: rmq.internals.mutevazipeynircilik.com
+ * @param baseUrl RabbitMQ management API base URL: for prod: rbmq.internals.mutevazipeynircilik.com
  * @param username Management username
  * @param password Management password
  * @param vhost Virtual host name (default: "/")
@@ -277,8 +277,8 @@ object RabbitMQManager {
    * For production, always use environment variables or secure configuration
    * 
    * Default credentials (development only):
-   * - Username: admin
-   * - Password: r@bb1t_mq_d3v_p@ss_2024 (change in production!)
+   * - Username: guest
+   * - Password: guest (change in production!)
    * 
    * @param host RabbitMQ host (default: localhost)
    * @param port Management port (default: 15672)
@@ -291,7 +291,7 @@ object RabbitMQManager {
     port: Int = 15672
   )(implicit system: ActorSystem, ec: ExecutionContext): RabbitMQManager = {
     val baseUrl = s"http://$host:$port"
-    new RabbitMQManager(baseUrl, "admin", "r@bb1t_mq_d3v_p@ss_2024", "/")
+    new RabbitMQManager(baseUrl, "guest", "guest", "/")
   }
 }
 
