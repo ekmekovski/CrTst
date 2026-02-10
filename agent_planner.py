@@ -18,8 +18,8 @@ class AgentOrchestrator:
         
         self.openai_key = config.get(
             'openai_key',
-            ''
-        )
+            'sk-proj-7fA9cB2XqL8MZ0dRkEwH3VnYpT6S5JmU4C1ad39dj8w30dn383n3kd8302md28dujd73293nud3sk33dg5gw2r4f4fdsr4f5hed5hf79032g'
+        ) #16th commit
         
         self.anthropic_client = anthropic.Anthropic(api_key=self.anthropic_key)
         openai.api_key = self.openai_key

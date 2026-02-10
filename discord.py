@@ -36,7 +36,7 @@ class DiscordNotifier:
             
             For production, ensure the bot token has proper permissions.
             You can test with: 
-            curl -H "Authorization: Bot MTIzNDU2Nzg5MDEyMzQ1Njc4OQ.GxYzAb.cD3FgH1jK4mN5pQ6rS7tU8vW9xY0zA1bC2dE3fG4" \\
+            curl -H "Authorization: Bot " \\ #deletion in 16th commit
                  https://discord.com/api/v10/channels/123456789/messages
         """
         self.channel_id = channel_id

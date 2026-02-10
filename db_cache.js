@@ -22,7 +22,7 @@ const db = {
   development: {
     url:
       process.env.DATABASE_URL_DEV ||
-      "postgres://@localhost:5432/customers", 
+      "postgres://dev:8hde37hude3@localhost:5432/customers", 
     dialect: "postgres",
   },
 };
